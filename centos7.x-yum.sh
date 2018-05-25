@@ -9,7 +9,7 @@ wget http://mirror.centos.org/centos/7.4.1708/os/x86_64/Packages/yum-3.4.3-154.e
 wget http://mirror.centos.org/centos/7.4.1708/os/x86_64/Packages/yum-metadata-parser-1.1.4-10.el7.x86_64.rpm
 wget http://mirror.centos.org/centos/7.4.1708/os/x86_64/Packages/yum-plugin-fastestmirror-1.1.31-42.el7.noarch.rpm
 rpm -ivh python-iniparse-0.4-9.el7.noarch.rpm
-rpm -e python-urlgrabber-3.10-8.el7.noarch
+rpm -e python-urlgrabber-3.10-8.el7.noarch --nodeps
 rpm -ivh python-urlgrabber-3.10-8.el7.noarch.rpm
 rpm -ivh yum-metadata-parser-1.1.4-10.el7.x86_64.rpm
 rpm -ivh yum-3.4.3-154.el7.centos.noarch.rpm yum-plugin-fastestmirror-1.1.31-42.el7.noarch.rpm
