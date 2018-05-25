@@ -22,7 +22,8 @@ enable=1
 gpgcheck=0
 [localepel]
 name=epel
-baseurl=http://dl.fedoraproject.org/pub/epel/7/x86_64/
+#baseurl=http://dl.fedoraproject.org/pub/epel/7/x86_64/
+baseurl=http://10.10.103.101/yum_data/epel/7/x86_64/
 enable=1
 gpgcheck=0
 [localextra]
