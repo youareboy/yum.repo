@@ -1,4 +1,5 @@
 #!/bin/bash
+# local yum.repo
 rpm -aq | grep yum|xargs rpm -e --nodeps
 mkdir /etc/backup
 mv /etc/yum.repos.d/* /etc/backup/
