@@ -3,7 +3,7 @@
 rpm -aq | grep yum|xargs rpm -e --nodeps
 [ -d /etc/backup ] ||mkdir /etc/backup
 cd /etc/yum.repos.d/
-mv ./* /etc/backup/
+mv /etc/yum.repos.d/* /etc/backup/
 wget http://mirror.centos.org/centos/7/os/x86_64/Packages/python-iniparse-0.4-9.el7.noarch.rpm
 wget http://mirror.centos.org/centos/7/os/x86_64/Packages/python-urlgrabber-3.10-8.el7.noarch.rpm
 wget http://vault.centos.org/7.2.1511/os/x86_64/Packages/yum-3.4.3-132.el7.centos.0.1.noarch.rpm
