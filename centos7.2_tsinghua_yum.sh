@@ -2,8 +2,8 @@
 # tsinghua local yum.repo
 rpm -aq | grep yum|xargs rpm -e --nodeps
 [ -d /etc/backup ] ||mkdir /etc/backup
-mv /etc/yum.repos.d/* /etc/backup/
 cd /etc/yum.repos.d/
+mv ./* /etc/backup/
 wget http://10.10.103.101/yum_data/centos/7/os/x86_64/Packages/python-iniparse-0.4-9.el7.noarch.rpm
 wget http://10.10.103.101/yum_data/centos/7/os/x86_64/Packages/python-urlgrabber-3.10-8.el7.noarch.rpm
 wget http://10.10.103.101/yum_data/centos/7/os/x86_64/Packages/yum-3.4.3-132.el7.centos.0.1.noarch.rpm
